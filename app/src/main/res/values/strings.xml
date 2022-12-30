@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SPA CONTROL</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="AlertLoginEmailPassword">El email y contraseña son requeridos</string>
+    <string name="logout">Salir</string>
+</resources>
