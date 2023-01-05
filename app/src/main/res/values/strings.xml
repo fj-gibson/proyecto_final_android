@@ -5,4 +5,7 @@
     <string name="login">Login</string>
     <string name="AlertLoginEmailPassword">El email y contraseña son requeridos</string>
     <string name="logout">Salir</string>
+    <string name="customers">Clientes</string>
+    <string name="appointmen">Citas</string>
+    <string name="home">Inicio</string>
 </resources>
