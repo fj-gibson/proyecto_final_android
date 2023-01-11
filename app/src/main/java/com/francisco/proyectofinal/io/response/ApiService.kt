@@ -3,6 +3,7 @@ package com.francisco.proyectofinal.io.response
 import android.content.SharedPreferences
 import com.francisco.proyectofinal.io.LoginResponse
 import com.francisco.proyectofinal.io.NewCustomer
+import com.francisco.proyectofinal.model.Appointment
 import com.francisco.proyectofinal.model.Customer
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -38,5 +39,8 @@ interface ApiService {
 
     @DELETE("https://diplomado.alfraber.com/api/v1/customers/delete")
     fun deleteCustomer(@Query(value="id") name: String) : Call<NewCustomer>
+
+    @GET(value="get")
+    fun appointments() : Call<List<Appointment>>
 
 }

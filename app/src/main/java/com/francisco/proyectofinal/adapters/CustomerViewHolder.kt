@@ -40,7 +40,6 @@ class CustomerViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             (context as Activity).finish()
 
         }
-
     }
 
 }

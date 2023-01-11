@@ -20,4 +20,6 @@
     <string name="deleteCustomer">Eliminar cliente</string>
     <string name="ErrorDeleteCustomer">Error al borrar cliente</string>
     <string name="CustomerNotFound">El cliente no exite</string>
+    <string name="LoadAppointments">Cargando citas</string>
+    <string name="ErrorLoadAppointments">Error al cargar citas</string>
 </resources>
