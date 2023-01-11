@@ -43,4 +43,7 @@ interface ApiService {
     @GET(value="get")
     fun appointments() : Call<List<Appointment>>
 
+    @DELETE("https://diplomado.alfraber.com/api/v1/appointment/delete")
+    fun deleteAppointment(@Query(value="id") name: Int) : Call<Appointment>
+
 }

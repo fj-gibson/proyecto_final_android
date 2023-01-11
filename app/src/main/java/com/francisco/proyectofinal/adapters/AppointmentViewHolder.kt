@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.francisco.proyectofinal.R
 import com.francisco.proyectofinal.databinding.ItemAppointmentBinding
 import com.francisco.proyectofinal.model.Appointment
+import com.francisco.proyectofinal.ui.AppointmentInformationActivity
 import com.francisco.proyectofinal.ui.CustomerInfoActivity
 
 class AppointmentViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -38,14 +39,24 @@ class AppointmentViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         }
 
         binding.tvCustomerName.text     = appointment.customer.name
+        binding.tvCustomerEmail.text    = appointment.customer.email
 
-//        Glide.with(customerPhoto.context).load(appointment.customer.photo).into(customerPhoto)
-//        binding.btnMoreInformation.setOnClickListener{
-//            var intent = Intent(context, CustomerInfoActivity::class.java)
-//            intent.putExtra("cutomer_id",appointment.customer_id)
-//            context.startActivity(intent)
-//            (context as Activity).finish()
-//
-//        }
+
+        binding.btnMoreInformation.setOnClickListener{
+            var intent = Intent(context, AppointmentInformationActivity::class.java)
+            intent.putExtra("id",appointment.id)
+            intent.putExtra("day",appointment.day)
+            intent.putExtra("room",appointment.room)
+            intent.putExtra("note",appointment.note)
+            intent.putExtra("customer_id",appointment.customer_id)
+            intent.putExtra("status",appointment.status)
+            intent.putExtra("customer_name",appointment.customer.name)
+            intent.putExtra("customer_email",appointment.customer.email)
+            intent.putExtra("customer_phone",appointment.customer.phone)
+            intent.putExtra("customer_photo",appointment.customer.photo)
+            context.startActivity(intent)
+            (context as Activity).finish()
+
+        }
     }
 }
