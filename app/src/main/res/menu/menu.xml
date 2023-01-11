@@ -14,7 +14,7 @@
 
     <item
         android:id="@+id/goAppointments"
-        android:title="@string/appointmen"
+        android:title="@string/appointment"
         android:icon="@drawable/ic_baseline_calendar"
         />
 

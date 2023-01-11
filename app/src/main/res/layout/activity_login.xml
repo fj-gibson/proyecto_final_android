@@ -8,12 +8,13 @@
     android:orientation="vertical"
     android:paddingHorizontal="50dp"
     tools:context=".ui.LoginActivity">
+
     <ImageView
-        android:src="@drawable/logo"
-        android:layout_marginBottom="25dp"
         android:layout_width="108dp"
-        android:layout_height="108dp"/>
-    
+        android:layout_height="108dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/logo" />
+
     <EditText
         android:id="@+id/etEmail"
         android:hint="@string/email"
@@ -24,12 +25,13 @@
         android:id="@+id/etPassword"
         android:hint="@string/password"
         android:inputType="textPassword"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="32dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnLogin"
         android:text="@string/login"
+        android:layout_marginBottom="64dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

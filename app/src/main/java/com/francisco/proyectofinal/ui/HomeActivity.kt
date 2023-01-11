@@ -34,7 +34,10 @@ class HomeActivity : AppCompatActivity() {
                 var intent = Intent(this, CustomerActivity::class.java)
                 startActivity(intent)
             }
-            R.id.goAppointments -> Toast.makeText(this,"Vamos con citas",Toast.LENGTH_LONG).show()
+            R.id.goAppointments -> {
+                var intent = Intent(this, AppointmentActivity::class.java)
+                startActivity(intent)
+            }
             R.id.goHome -> Toast.makeText(this,"Vamos con citas",Toast.LENGTH_LONG).show()
         }
         return super.onOptionsItemSelected(item)

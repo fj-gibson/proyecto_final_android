@@ -6,6 +6,18 @@
     <string name="AlertLoginEmailPassword">El email y contraseña son requeridos</string>
     <string name="logout">Salir</string>
     <string name="customers">Clientes</string>
-    <string name="appointmen">Citas</string>
+    <string name="newCustomers">Nuevo Cliente</string>
+    <string name="appointment">Citas</string>
     <string name="home">Inicio</string>
+    <string name="customerName">Nombre del cliente</string>
+    <string name="customer_email">Email del cliente</string>
+    <string name="customerPhone">Tel. del cliente</string>
+    <string name="createCustomer">Crear cliente</string>
+    <string name="requireAllFields">Todos los campos son obigatorios</string>
+    <string name="chargedCustomers">Clientes cargados</string>
+    <string name="erroLoadCustomers">Error al cargar clientes!</string>
+    <string name="CustomerInformation">Información del clientes</string>
+    <string name="deleteCustomer">Eliminar cliente</string>
+    <string name="ErrorDeleteCustomer">Error al borrar cliente</string>
+    <string name="CustomerNotFound">El cliente no exite</string>
 </resources>
