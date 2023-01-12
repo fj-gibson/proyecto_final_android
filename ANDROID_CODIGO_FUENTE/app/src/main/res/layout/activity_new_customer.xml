@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="50dp"
+    tools:context=".ui.NewCustomerActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/newCustomers"
+        android:textSize="24sp" />
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etNewCustomerName"
+        android:hint="@string/customerName"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etNewCustomerEmail"
+        android:hint="@string/customer_email"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etNewCustomerPhone"
+        android:hint="@string/customerPhone"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:text="@string/createCustomer"
+        android:layout_marginBottom="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
